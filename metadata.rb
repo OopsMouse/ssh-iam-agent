@@ -1,0 +1,7 @@
+name 'ssh-iam-agent'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures ssh-iam-agent'
+long_description 'Installs/Configures ssh-iam-agent'
+version '0.1.0'
