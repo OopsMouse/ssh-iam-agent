@@ -6,11 +6,10 @@ provisioner:
   name: chef_zero
 
 platforms:
-  - name: ubuntu-14.04
-  - name: centos-7.1
+  - name: centos-6.7
 
 suites:
   - name: default
     run_list:
       - recipe[ssh-iam-agent::default]
-    attributes:
+    attributes: { ssh-iam-agent: { users: [ "fx29491" ] } }
