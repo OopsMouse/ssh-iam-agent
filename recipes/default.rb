@@ -26,6 +26,10 @@ node['ssh-iam-agent']['users'].each { |user_name|
   end
 }
 
+package 'jq' do
+  action :install
+end
+
 template '/opt/authorized_keys_command.sh' do
   source '/opt/authorized_keys_command.sh'
   owner 'root'
